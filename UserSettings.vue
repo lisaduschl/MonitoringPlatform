@@ -1,6 +1,5 @@
 <!--
 This component changes the user settings(email address, password, data pulling frequency)
-Authors: Lisa & Dariia (modal window and delete account) 
 -->
 <template>
     <div class="">
@@ -105,8 +104,6 @@ Authors: Lisa & Dariia (modal window and delete account)
 
       /**
        * Returns the user information.
-       * 
-       * @author Lisa
        */
       fetchUser: function () {
         backend_api.get('users/'+this.$store.state.user.id).then(res => {
@@ -123,8 +120,6 @@ Authors: Lisa & Dariia (modal window and delete account)
 
       /**
        * Changes the email address of a user.
-       * 
-       * @author Lisa
        */
       changeMail: function () {
         let email = this.user.email;
@@ -154,8 +149,6 @@ Authors: Lisa & Dariia (modal window and delete account)
 
       /**
        * Changes the password of a user.
-       * 
-       * @author Lisa
        */
       changePassword: function () {
         if (this.user.password === "") {
@@ -182,8 +175,6 @@ Authors: Lisa & Dariia (modal window and delete account)
 
       /**
        * Updates the frequency with which the dashboard pulls new data from the backend.
-       * 
-       * @author Lisa
        */
       updateFrequency: function () {
         this.$store.state.user.updateFrequency = this.user.dashb_upd_freq;
@@ -201,8 +192,6 @@ Authors: Lisa & Dariia (modal window and delete account)
 
       /**
        * Closes the confirmation modal box.
-       * 
-       * @author Dariia
        */
       closeModal: function() {
         this.showModal = false;
@@ -210,8 +199,6 @@ Authors: Lisa & Dariia (modal window and delete account)
 
       /**
        * Deletes an account.
-       * 
-       * @author Dariia
        */
       deleteAccount: function () {
         backend_api.delete('users/' + this.$store.state.user.id).then((response) => {
@@ -233,8 +220,6 @@ Authors: Lisa & Dariia (modal window and delete account)
 
     /**
        * Displays the fetched data.
-       * 
-       * @author Lisa
        */
     mounted: function () {
        this.fetchUser();
