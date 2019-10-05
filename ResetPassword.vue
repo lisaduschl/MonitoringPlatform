@@ -1,6 +1,5 @@
 <!-- 
     This reset password component sends an email to a user to reset his password.
-    Author: Lisa
 -->
 <template>
    <div class="sufee-login d-flex align-content-center flex-wrap">
@@ -37,8 +36,7 @@
 
             /**
              * Checks if the email address is valid and sends it to the backend.
-             * 
-             * @author Lisa
+
              */
             resetPassword: function () {
                 function validateEmail(email) {
