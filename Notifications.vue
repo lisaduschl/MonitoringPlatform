@@ -1,6 +1,5 @@
 <!--
   This component shows the dashboard notifications.
-  Author: Lisa
  -->
 <template>
   <div class="">
