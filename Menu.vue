@@ -1,6 +1,5 @@
 <!--
 This component shows the menu bar on the left side of the dashboard.
-Author: Lisa
  -->
 <template>
     <aside id="left-panel" class="left-panel">
