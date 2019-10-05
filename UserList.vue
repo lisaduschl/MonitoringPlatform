@@ -1,6 +1,5 @@
 <!--
   This component shows the user list of registered users.
-  Author: Lisa
  -->
 <template>
   <div class="">
@@ -86,8 +85,6 @@ export default {
 
       /**
        * Returns the registered users.
-       * 
-       * @author Lisa
        */ 
       fetchUsers: function (currentPage) {
         let path = 'users?page=' + currentPage;
