@@ -1,6 +1,5 @@
 <!--
   This component is used to invite a new user.
-  Author: Lisa
  -->
 <template>
   <div class="">
@@ -103,8 +102,7 @@ export default {
 
     /**
        * Checks for a valid email address and sends email address and user role to the backend.
-       * 
-       * @author Lisa
+
        */
     invite: function () {
       function validateEmail(email) {
@@ -135,8 +133,7 @@ export default {
 
     /**
        * Saves the new token value.
-       * 
-       * @author Lisa
+
        */
     tokensave: function () {
       this.$store.dispatch('set_config', {token_exp: this.token_exp}).then(res => {
