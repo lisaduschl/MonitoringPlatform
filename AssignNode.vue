@@ -1,6 +1,5 @@
 <!-- 
   This component is used to assign nodes to a basic user.
-  Author: Lisa
 -->
 <template>
   <div class="">
@@ -91,8 +90,6 @@
 
       /**
        * Returns the nodes of the selected user.
-       * 
-       * @author Lisa
        */  
       fetchNodes: function (currentPage) {
         this.user_id = this.$route.params.user_id
@@ -142,8 +139,7 @@
 
       /**
        * Assigns and unassigns nodes to the user.
-       * 
-       * @author Lisa
+
        */  
       assignNodes(event, node) {
         let data = { node: node }
