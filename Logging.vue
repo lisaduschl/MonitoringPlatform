@@ -1,6 +1,5 @@
 <!--
 This component displays the latest logs.
-Author: Lisa
  -->
 <template>
   <div class="">
