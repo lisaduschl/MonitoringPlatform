@@ -1,6 +1,5 @@
 <!--
 This component shows the user profile of a user.
-Authors: Lisa & Dariia(part with modal window and delete account)
 -->
 <template>
   <div class="">
@@ -118,8 +117,6 @@ export default {
     
     /**
      * Returns user information to be displayed on the profile.
-     * 
-     * @author Lisa
      */
     fetch: function (currentPage) {
       this.user_id = this.$route.params.user_id;
@@ -147,8 +144,6 @@ export default {
 
     /**
        * Saves the changes (change user's role) when clicking the "submit"-button.
-       * 
-       * @author Lisa
        */
     submitChanges: function (event) {
      var data = {
@@ -167,8 +162,6 @@ export default {
 
     /**
      * Directs to the assign nodes page.
-     * 
-     * @author Lisa
      */
     assignNodes: function() {
       this.$router.push('/assignnode/'+ this.user._id);
